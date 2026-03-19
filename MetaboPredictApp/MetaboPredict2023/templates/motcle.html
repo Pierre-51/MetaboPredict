@@ -1,0 +1,259 @@
+{% load static %}
+{% load custom_filters %}
+<html>
+    <head>
+        <title>METABO PREDICT</title>
+        <!-- ICON -->
+        <link rel="icon" href="./../static/metabo/logo.png" type="image/x-icon">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+{#        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">#}
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//use.fontawesome.com/9ecd38a87f.css">
+
+        <!-- JAVA SCRIPT/ NEOVIS -->
+        <script src="https://unpkg.com/neovis.js@2.0.2"></script>
+
+        <script src="{% static 'neo4j.js' %}"></script>
+
+        <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.js"></script>
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/styleNeo4j.css' %}" rel="stylesheet">
+    </head>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">MetaboPredict</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/coculture">Co-Culture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ways">Ways</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+    <body onload="{{var1}}('{{var2}}')">
+        <div id="search-home" class="container-fluid search-home bg-white">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 text-center">   
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <form id="init-search" action="/result/" method="post">
+                                        {% csrf_token %}
+                                         <input id="NC" type="text" style="width: 50px" class="w-100 form-control-xs-lg search-input" placeholder='{{var2}}'  name="NC"/>
+                                    </form>
+                                </div>
+                                <div class="col-auto mt-auto">
+                                    <a href="#" class="btn btn-link" onclick="document.getElementById('init-search').submit(); return false;">
+                                        <i class="fa fa-search fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="demo"></p>
+                    <div id="viz"></div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        Filtres
+                    </div>
+                    <div class="card-body">
+                        <div class="filtres" id="filtre1">
+                            <ul>
+                              <li>
+                                  <input type="checkbox" id="All" name="filtre" value="*" onchange="checkCheckbox('All')" checked>
+                                    <label for="All">All</label>
+                              </li>
+                            </ul>
+                            {%  for filters in var6 %}
+    {#                            filters|slice:"0:1"|lower#}
+                                <ul>
+                                  <li>
+                                      {% if filters == "Reaction" %}
+                                          <input type="checkbox" id="{{ filters }}" name="filtre" value="r" onchange="checkCheckbox('{{ filters }}')">
+                                          <label for="{{ filters }}">{{ filters }}</label>
+                                      {% else %}
+                                          <input type="checkbox" id="{{ filters }}" name="filtre" value="{{"e"|add:':'|add:filters}}" onchange="checkCheckbox('{{ filters }}')">
+                                          <label for="{{ filters }}">{{ filters }}</label>
+                                      {% endif %}
+                                  </li>
+                                </ul>
+                            {% endfor %}
+                        </div>
+                            <ul>
+                              <li>
+                                <div class="dropdown" id="organisme" data-control="checkbox-dropdown">
+                                    <label class="dropdown-label">Select</label>
+
+                                    <div class="dropdown-list">
+                                        <a href="#" data-toggle="check-all" class="dropdown-option">
+                                            Check All
+                                        </a>
+                                        {% for i in var5 %}
+                                            <ul>
+                                                <li>
+                                                    <label class="dropdown-option">
+                                                    <input type="checkbox" name="dropdown-group" value='{{ i }}'>
+                                                    {{ i }}
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="button" onclick="newMol('{{var2}}');" value="filter" />
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                    <pre id="eventSpanContent"></pre>
+                        {% if var4 %}
+                             <table  class="table table-hover" id="table1">
+                                  <tr>
+                                      <th>Molecule</th>
+                                      <th>Product by</th>
+                                      <th>Use by</th>
+                                  </tr>
+                                    {% for n in var4 %}
+                                        <tr>
+                                            {% for i in n %}
+                                                <td>{{i}}</td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                            </table>
+                        {% else %}
+                            <p>There is no exchange of metabolites for this search.</p>
+                        {% endif %}
+                    <div class="table-responsive">
+                        <table  class="table table-hover" id="table2" >
+                              <tr>
+                                  <th>Reaction</th>
+                                  <th>Product(s)</th>
+                                  <th>Reagent(s)</th>
+                                  <th>Bacteria(s)</th>
+                                  <th>Pathway(s)</th>
+                                  <th>Enzyme(s)</th>
+                              </tr>
+                                {% for n in var3 %}
+                                    <tr>
+                                        {% for i in n %}
+                                            {% if i == "n, u, l, l" %}
+                                                <td class="highlight-cell">
+                                                    null
+                                                </td>
+                                            {% elif forloop.counter == 5%}
+                                                <td class="highlight-cell">
+                                                    {% with i|split_string:"," as list %}
+                                                        {% for j in list %}
+                                                            {% if "PWY" in j %}
+                                                                <a href="https://biocyc.org/META/search-query?type=PATHWAY&name={{j|cut:" "}}&orgids=(AMUC349741%20BFRA272559%20HUMAN%20GCF_900537995%20GCF_000258365)" target="_blank">{{j}}</a>
+                                                            {% elif "R-HSA" in j%}
+                                                                <a href="https://reactome.org/content/detail/{{j}}"target="_blank">{{j}}</a>
+                                                            {% else %}
+                                                                {{j}}
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    {% endwith %}
+                                                </td>
+                                            {% elif forloop.counter == 6%}
+                                                <td class="highlight-cell">
+                                                    {% with i|split_string:"," as list %}
+                                                        {% for j in list %}
+                                                            <a href="https://www.brenda-enzymes.org/enzyme.php?ecno={{j|cut:" "|slice:"3:"}}" target="_blank">{{j}}</a>
+                                                        {% endfor %}
+                                                    {% endwith %}
+                                                </td>
+                                            {% else %}
+                                                <td class="highlight-cell">{{i}}</td>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                    </div>
+                    <a href="#" class="btn btn-link" onclick="ExportToExcel('csv'); return false;">
+                        <i class="bi bi-filetype-csv" style="font-size: 2em;"></i>
+                    </a>
+{#                    <button onclick="ExportToExcel('xlsx')"><i class="bi bi-filetype-xlsx" ></i></button>#}
+                </div>
+            </div>
+        </div>
+<!-- Bloc java -->
+        {% block js_block %}
+        <script>
+            function change()
+            {
+                var elem = document.getElementById("myButton1");
+                if (elem.value=="Close Curtain") elem.value = "Open Curtain";
+                else elem.value = "Close Curtain";
+            }
+
+            function checkCheckbox(checkboxId) {
+              var filtre = document.getElementById('filtre1');
+              const checkboxes = filtre.querySelectorAll('input[type="checkbox"]');
+              {#var checkboxes = document.querySelectorAll('input[type="checkbox"]');#}
+              if (checkboxId === 'All') {
+                // Uncheck the other checkboxes
+                checkboxes.forEach(function(checkbox) {
+                  if (checkbox.id !== checkboxId) {
+                    checkbox.checked = false;
+                  }
+                });
+              } else {
+                // Uncheck the first checkbox
+                document.getElementById('All').checked = false;
+              }
+            }
+
+            function ExportToExcel(type, fn, dl) {
+               var elt = document.getElementById('table2');
+               var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+               return dl ?
+                 XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }):
+                 XLSX.writeFile(wb, fn || ('{{var2}}.' + (type || 'xlsx')));
+            }
+            $(function () {
+                const all = [
+                    '{% for n in all %}',
+                        '{{n}}',
+                        '{% endfor %}'
+                ];
+                $("#NC").autocomplete({
+                    source: all,
+                    minLength: 3
+                });
+            } );
+        </script>
+            <script src="{% static 'action.js' %}"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,298 @@
+html, body, input, textarea {
+    font: 10pt arial;
+}
+
+#viz {
+    width: 100%;
+    height: 500px;
+    border: 1px solid lightgray;
+    zoom: normal;
+}
+#viz2 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid lightgray;
+    zoom: normal;
+}
+
+#search-home {
+  height: 100vh;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  outline: none;
+  padding: 0;
+}
+
+#search-tabs {
+  margin-bottom: -50px;
+}
+
+#search-results {
+  max-width: 1280px;
+  min-height: 100vh;
+}
+
+.icon-div {
+    background: #fff;
+    border-radius: 0 0 80px 80px;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    padding: 4px;
+    width: 80px;
+}
+
+.load-more {
+  background: #dee2e6;
+  height: 70px;
+}
+
+.clickable-rows tbody tr {
+  cursor: pointer;
+}
+
+
+.ui-autocomplete {
+  position: absolute;
+  height: 200px;
+	display:block;
+	float: left;
+  margin: 0;  
+  overflow-y: scroll; 
+  width: 75%;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  color: #495057;
+  border-radius: 0.25rem;
+  padding: 2px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+div.vis-network div.vis-navigation div.vis-button.vis-up {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-down {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-left {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-right {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-zoomIn {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-zoomOut {
+    display: none;
+}
+div.vis-network div.vis-navigation div.vis-button.vis-zoomExtends{
+    position: absolute;
+      /* Position the button at the bottom */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.Metabutton:active,
+.active {
+  top: 2px;
+  left: 1px;
+  box-shadow: none;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown .dropdown-list {
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    right: 2px;
+    width: 250px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+    transform-origin: 50% 0;
+    transform: scale(1, 0);
+    transition: transform 0.15s ease-in-out 0.15s;
+    max-height: 66vh;
+    overflow-y: scroll;
+}
+
+.dropdown .dropdown-option {
+    display: block;
+    text-align: left;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.dropdown .dropdown-label {
+    display: block;
+    /*width: 100%;*/
+    width: 250px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    line-height: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown .dropdown-label:before {
+    content: '▼';
+    float: right;
+}
+
+.dropdown.on .dropdown-list {
+    transform: scale(1, 1);
+    transition-delay: 0s;
+}
+
+.dropdown.on .dropdown-list .dropdown-option {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.dropdown.on .dropdown-label:before {
+    content: '▲';
+}
+
+.dropdown [type="checkbox"] {
+    position: relative;
+    margin-right: 4px;
+}
+
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    clear: both;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+
+input[type="checkbox"]#all,#Pathway,#Reaction,#Enzyme,#Molecule:not(:checked),
+input[type="checkbox"]#all,#Pathway,#Reaction,#Enzyme,#Molecule:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input[type="checkbox"]#Reaction + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: #F0A1BF;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]#Reaction:checked + label {
+  /*border: 1px solid white;*/
+  color: white;
+  background-color: #D789A6;
+}
+input[type="checkbox"]#Molecule + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: #8CACD3;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]#Molecule:checked + label {
+  /*border: 1px solid white;*/
+  color: white;
+  background-color: #809DBF;
+}
+input[type="checkbox"]#Enzyme + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: #F5DF4D;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]#Enzyme:checked + label {
+  /*border: 1px solid white;*/
+  color: white;
+  background-color: #E0C931;
+}
+input[type="checkbox"]#Pathway + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: #FF8A33;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]#Pathway:checked + label {
+  /*border: 1px solid white;*/
+  color: white;
+  background-color: #D36717;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.select-field {
+    font-size: 15px;
+    width: 200px; /* Adjust the width value as needed */
+    margin-bottom: 30px; /* Adjust the margin value as needed */
+  }
+
+input[type="text"]
+{
+    font-size:15px;
+}

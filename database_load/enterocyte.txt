@@ -1,0 +1,195 @@
+TCN1_binds_RCbl	R-HSA-9758881		TCN1 // dietary_protein:RCbl	 // 	protein // TCN1:RCbl	 // 
+Pancreatic_proteases_degrade_TCN1:RCbl	R-HSA-9758881		TCN1:RCbl		RCbl	140785
+CBLIF_binds_RCbl	R-HSA-9758881		RCbl // CBLIF	140785 // 	CBLIF:RCbl	
+CUBN:AMN_binds_CBLIF:RCbl	R-HSA-9758881		CBLIF:RCbl // CUBN:AMN	 // 	CUBN:AMN:CBLIF:RCbl	
+CUBN:AMN-mediated_CBLIF:RCbl_uptake_and_delivery_to_lysosome	R-HSA-9758881		CUBN:AMN:CBLIF:RCbl		CBLIF:RCbl // CUBN:AMN	 // 
+Unknown_lysosomal_protease_degrades_CBLIF:RCbl_to_release_Cbl	R-HSA-9758881	Ec-3.4	CBLIF:RCbl		RCbl	140785
+ABCD4:LMBRD1_transports_RCbl_from_lysosomal_lumen_to_cytosol_(gut_mucosal_cells)	R-HSA-9758881	Ec-7.6.2.8	H2O // RCbl // ATP	15377 // 140785 // 30616	ADP // RCbl // Pi	456216 // 140785 // 43474
+Digestion_of_cholesterol_esters_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8963743	Ec-3.1.1.13	H2O // CHEST	15377 // 17002	LCFAs // CHOL	15904 // 16113
+Digestion_of_monoacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8963743	Ec-3.1.1.23	H2O // MAG	15377 // 17408	glycerol // LCFAs	17754 // 15904
+Digestion_of_triacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8963743	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_triacylglycerols_by_extracellular_PTL:colipase	R-HSA-8963743	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_diacylglycerols_by_extracellular_PTL:colipase	R-HSA-8963743	Ec-3.1.1.23	DAG // H2O	18035 // 15377	LCFAs // MAG	15904 // 17408
+Digestion_of_triacylglycerols_by_extracellular_pancreatic_lipase-related_protein_2	R-HSA-8963743	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+PNLIP:CLPS_hydrolyses_RPALM_to_atROL_and_PALM	R-HSA-8963743	Ec-3.1.1.21	H2O // RPALM	15377 // 17616	PALM // atROL	15756 // 17336
+LIPs_hydrolyze_TG_to_DAG_and_LCFA	R-HSA-8963743	Ec-3.1.1.34	H2O // TAGs	15377 // 17855	DAG // LCFAs	18035 // 15904
+Digestion_of_linear_starch_(amylose)_by_extracellular_amylase	R-HSA-8963743	Ec-3.2.1.1	H2O // starch_(amylose)	15377 // 	Mal // maltotriose	17306 // 27931
+Digestion_of_branched_starch_(amylopectin)_by_extracellular_amylase	R-HSA-8963743	Ec-3.2.1.1	H2O // starch_(amylopectin)	15377 // 	Mal // limit_dextrin // maltotriose	17306 // 28912 // 27931
+Digestion_of_1-6_linkages_of_limit_dextrins_to_yield_maltose,_maltotriose,_longer_maltosides,_and_glucose	R-HSA-8963743	Ec-3.2.1.20	limit_dextrin // H2O	28912 // 15377	Mal // Glc // maltotriose	17306 // 17925 // 27931
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(maltase-glucoamylase)	R-HSA-8963743	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(sucrase-isomaltase)	R-HSA-8963743	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltose_+_H2O_=>_2_D-glucose_(maltase-glucoamylase)	R-HSA-8963743	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+maltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-8963743	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+isomaltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-8963743	Ec-3.2.1.20	iMal // H2O	28189 // 15377	Glc	17925
+lactose_+_H2O_=>_D-glucose_+_D-galactose	R-HSA-8963743	Ec-3.2.1.108	H2O // Lac	15377 // 17716	Glc // Gal	17925 // 17118
+sucrose_+_H2O_=>_glucose_+_fructose	R-HSA-8963743	Ec-3.2.1.48	H2O // Suc	15377 // 17992	Glc // Fru	17925 // 15824
+trehalose_+_H2O_=>_2_D-glucose	R-HSA-8963743	Ec-3.2.1.28	H2O // alpha,alpha-trehalose	15377 // 16551	Glc	17925
+CHIA_hydrolyses_chitin	R-HSA-8963743	Ec-3.2.1.14	H2O // chitin	15377 // 	GlcNAc-beta1,4-GlcNAc-beta1,4-GlcNAc // GlcNAc-beta1,4-GlcNAc	86362 // 86361
+CHIT1_hydrolyses_CHIT_to_3xADGP	R-HSA-8963743	Ec-3.2.1	H2O // CHIT	15377 // 84373	ADGP	47977
+ALPI_dimer_hydrolyses_phosphate_monoesters	R-HSA-8963743	Ec-3.1.3.1	H2O // phosphate_monoester	15377 // 7794	Alcohol // Pi	30879 // 43474
+GUCY2C_trimer_binds_GUCA2A,B	R-HSA-8963743		GUCY2C_trimer // GUCA2A,B	 // 	GUCY2C_trimer:GUCA2A,B	
+PIR_oxygenates_quercetin	R-HSA-8963743	Ec-1.13.11.24	O2 // quercetin	15379 // 16243	CO // 2PCPGCA	17245 // 16068
+NPC1L1-mediated_cholesterol_uptake	R-HSA-8963743		CHOL	16113	CHOL	16113
+NPC1L1-mediated_phytosterol_uptake	R-HSA-8963743		phytosterols	26125	phytosterols	26125
+NPC1L1_binds_ezetimibe	R-HSA-8963743		NPC1L1-1 // EZE	 // 	NPC1L1:ezetimibe	
+Transport_(influx)_of_fructose_by_GLUT5	R-HSA-8963743		Fru	15824	Fru	15824
+SLC5A1_cotransports_Glc,Gal_with_Na+_from_extracellular_region_to_cytosol	R-HSA-8963743		Na+ // Gal,_Glc	29101 // 	Na+ // Gal,_Glc	29101 // 
+SLC2A2_tetramer_transports_Fru,_Gal,_Glc_from_cytosol_to_extracellular_region	R-HSA-8963743		Fru,_Gal,_Glc		Fru,_Gal,_Glc	
+Transport_(influx)_of_fructose_by_GLUT5	R-HSA-8981373		Fru	15824	Fru	15824
+SLC5A1_cotransports_Glc,Gal_with_Na+_from_extracellular_region_to_cytosol	R-HSA-8981373		Na+ // Gal,_Glc	29101 // 	Na+ // Gal,_Glc	29101 // 
+SLC2A2_tetramer_transports_Fru,_Gal,_Glc_from_cytosol_to_extracellular_region	R-HSA-8981373		Fru,_Gal,_Glc		Fru,_Gal,_Glc	
+PNLIP:CLPS_hydrolyses_RPALM_to_atROL_and_PALM	R-HSA-975634	Ec-3.1.1.21	H2O // RPALM	15377 // 17616	PALM // atROL	15756 // 17336
+PLB1_hydrolyses_RPALM_to_atROL	R-HSA-975634	Ec-3.1.1.21	H2O // RPALM	15377 // 17616	PALM // atROL	15756 // 17336
+atROL_binds_to_RBP2	R-HSA-975634		atROL // RBP2	17336 // 	RBP2:atROL	
+BCMO1:Fe2+_cleaves_betaC_to_atRAL	R-HSA-975634	Ec-1.13.11.63	betaC // O2	17579 // 15379	atRAL	17898
+BCO2:Fe2+_cleaves_betaC_to_APO10al_and_bION	R-HSA-975634	Ec-1.13.11	O2 // betaC	15379 // 17579	bION // APO10al	32325 // 53153
+atRAL_binds_to_RBP2	R-HSA-975634		RBP2 // atRAL	 // 17898	RBP2:atRAL	
+RDH11_reduces_RBP2:atRAL_to_RBP2:atROL	R-HSA-975634	Ec-1.1.1	TPNH // RBP2:atRAL // H+	57783 //  // 15378	RBP2:atROL // TPN	 // 58349
+AKRs_reduce_RBP2:atRAL_to_RBP2:atROL	R-HSA-975634	Ec-1.1.1	TPNH // RBP2:atRAL // H+	57783 //  // 15378	RBP2:atROL // TPN	 // 58349
+LRAT_esterifies_RBP2:atROL_and_FACYLs_to_atREs	R-HSA-975634	Ec-2.3.1.135	RBP2:atROL // FACYLs	 // 	atREs // RBP2	 // 
+atREs_binds_to_nascent_CM	R-HSA-975634		atREs // nascent_CM	 // 	nascent_CM:atREs	
+Chylomicron_secretion_into_the_lymphatic_system	R-HSA-975634		nascent_CM:atREs		nascent_CM:atREs	
+Nascent_CMs_transform_into_mature_CMs	R-HSA-975634		spherical_HDL:apoC-II:apoC-III:apoE // nascent_CM:atREs	 // 	mature_CM:atREs // spherical_HDL	 // 
+LPL_hydrolyses_TGs_from_mature_CMs	R-HSA-975634	Ec-3.1.1.34	mature_CM:atREs		DAG // LCFAs // CR:atREs	18035 // 15904 // 
+LDLR_transports_extracellular_CR:atREs_to_cytosol	R-HSA-975634		CR:atREs		CR:atREs	
+CR:atREs_binds_apoE_and_HSPG	R-HSA-975634		APOE // CR:atREs // HSPGs	 //  // 	CR:atREs:HSPG:apoE	
+LRPs_transport_extracellular_CR:atREs:HSPG:apoE_to_cytosol	R-HSA-975634		CR:atREs:HSPG:apoE		CR:atREs:HSPG:apoE	
+NREH_hydrolyses_atREs_to_atROL_and_FAs	R-HSA-975634	Ec-3.1.1	H2O // CR:atREs	15377 // 	atROL // CR // H+ // FAs	17336 //  // 15378 // 
+NREH_hydrolyses_atREs_(HSPG:apoE)_to_atROL_and_FAs	R-HSA-975634	Ec-3.1.1	H2O // CR:atREs:HSPG:apoE	15377 // 	atROL // CR // APOE // H+ // HSPGs // FAs	17336 //  //  // 15378 //  // 
+RETSAT_reduces_atROL_to_at-13,14-dhROL	R-HSA-975634	Ec-1.3.99.23	atROL // NAD	17336 // 57540	at-13,14-dhROL // NADH // H+	52075 // 57945 // 15378
+atROL_binds_RBP1_(parenchymal_cell)	R-HSA-975634		atROL // RBP1	17336 // 	RBP1:atROL	
+Parenchymal_atROL_translocates_to_HSCs	R-HSA-975634		RBP1:atROL		RBP1 // atROL	 // 17336
+atROL_binds_RBP1	R-HSA-975634		RBP1 // atROL	 // 17336	RBP1:atROL	
+LRAT_esterifies_RBP1:atROL_and_FACYLs_to_atREs	R-HSA-975634	Ec-2.3.1	RBP1:atROL // FACYLs	 // 	RBP1 // atREs	 // 
+A_REH_hydrolses_atREs_to_atROL_and_FAs	R-HSA-975634	Ec-3.1.1.21	H2O // atREs	15377 // 	atROL // FAs	17336 // 
+atROL_secreted_into_bloodstream	R-HSA-975634		atROL	17336	atROL	17336
+APOM_binds_retinoids	R-HSA-975634		retinoids // APOM	 // 	APOM:retinoids	
+RBP4_binds_atROL	R-HSA-975634		RBP // atROL	 // 17336	RBP4:atROL	
+RBP4:atROL_binds_TTR	R-HSA-975634		TTR_tetramer // RBP4:atROL	 // 	TTR:RBP4:atROL	
+NPC1L1-mediated_cholesterol_uptake	R-HSA-8963678		CHOL	16113	CHOL	16113
+NPC1L1-mediated_phytosterol_uptake	R-HSA-8963678		phytosterols	26125	phytosterols	26125
+NPC1L1_binds_ezetimibe	R-HSA-8963678		NPC1L1-1 // EZE	 // 	NPC1L1:ezetimibe	
+Digestion_of_cholesterol_esters_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-192456	Ec-3.1.1.13	H2O // CHEST	15377 // 17002	LCFAs // CHOL	15904 // 16113
+Digestion_of_monoacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-192456	Ec-3.1.1.23	H2O // MAG	15377 // 17408	glycerol // LCFAs	17754 // 15904
+Digestion_of_triacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-192456	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_triacylglycerols_by_extracellular_PTL:colipase	R-HSA-192456	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_diacylglycerols_by_extracellular_PTL:colipase	R-HSA-192456	Ec-3.1.1.23	DAG // H2O	18035 // 15377	LCFAs // MAG	15904 // 17408
+Digestion_of_triacylglycerols_by_extracellular_pancreatic_lipase-related_protein_2	R-HSA-192456	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+PNLIP:CLPS_hydrolyses_RPALM_to_atROL_and_PALM	R-HSA-192456	Ec-3.1.1.21	H2O // RPALM	15377 // 17616	PALM // atROL	15756 // 17336
+LIPs_hydrolyze_TG_to_DAG_and_LCFA	R-HSA-192456	Ec-3.1.1.34	H2O // TAGs	15377 // 17855	DAG // LCFAs	18035 // 15904
+NPC1L1-mediated_cholesterol_uptake	R-HSA-8963676		CHOL	16113	CHOL	16113
+NPC1L1-mediated_phytosterol_uptake	R-HSA-8963676		phytosterols	26125	phytosterols	26125
+NPC1L1_binds_ezetimibe	R-HSA-8963676		NPC1L1-1 // EZE	 // 	NPC1L1:ezetimibe	
+Transport_(influx)_of_fructose_by_GLUT5	R-HSA-8963676		Fru	15824	Fru	15824
+SLC5A1_cotransports_Glc,Gal_with_Na+_from_extracellular_region_to_cytosol	R-HSA-8963676		Na+ // Gal,_Glc	29101 // 	Na+ // Gal,_Glc	29101 // 
+SLC2A2_tetramer_transports_Fru,_Gal,_Glc_from_cytosol_to_extracellular_region	R-HSA-8963676		Fru,_Gal,_Glc		Fru,_Gal,_Glc	
+Defective_SLC11A2_does_not_cotransport_Fe2+,_H+_from_extracellular_region_to_cytosol	R-HSA-5619048		Fe2+ // H+	29033 // 15378		
+Defective_SLC40A1_does_not_transport_Fe3+_from_extracellular_region_to_cytosol	R-HSA-5655799		Fe3+	29034		
+FXR_binds_bile_acids	R-HSA-159418		NR1H4 // DCA,CDCA,LCHA	 // 	NR1H4:DCA,CDCA,LCHA	
+FXR:bile_acids_binds_RXRA_and_NCOA1,2	R-HSA-159418		NCOA1 // RXRA // NR1H4:DCA,CDCA,LCHA // NCOA2	 //  //  // 	NCOA1,2:RXRA:NR1H4:DCA,CDCA,LCHA	
+Co-transport_(influx)_of_bile_salts_and_acids_and_sodium_ions_by_ASBT	R-HSA-159418		Na+ // bile_salts_and_acids	29101 // 	bile_salts_and_acids // Na+	 // 29101
+Bile_salts_bind_FABP6	R-HSA-159418		bile_salts_and_acids // FABP6	 // 	bile_salts_and_acids:FABP6	
+Bile_salts_dissociate_from_FABP6	R-HSA-159418		bile_salts_and_acids:FABP6		bile_salts_and_acids // FABP6	 // 
+Efflux_of_bile_salts_from_enterocytes_to_portal_system_by_MRP3	R-HSA-159418		bile_salts_and_acids // ATP	 // 30616	ADP // bile_salts_and_acids // Pi	456216 //  // 43474
+OSTA:OSTB_exports_bile_salts_from_enterocytes_to_the_portal_system	R-HSA-159418		bile_salts_and_acids		bile_salts_and_acids	
+Bile_salts_and_acids_bind_ALB	R-HSA-159418		bile_salts_and_acids // ALB	 // 	ALB:bile_salts_and_acids	
+Bile_salts_and_acids_dissociate_from_ALB	R-HSA-159418		ALB:bile_salts_and_acids		bile_salts_and_acids // ALB	 // 
+NTCP_takes_up_bile_salts_and_Na+_into_the_liver	R-HSA-159418		Na+ // bile_salts_and_acids	29101 // 	bile_salts_and_acids // Na+	 // 29101
+SLCO1A2_transports	R-HSA-159418		bile_salts_and_acids		bile_salts_and_acids	
+Transport_(influx)_of_glycocholate_and_taurocholate_by_OATP-C	R-HSA-159418		GCCA,_TCCA		GCCA,_TCCA	
+SLCO1B3_transports_ALB:(GCCA,_TCCA)_from_extracellular_region_to_cytosol	R-HSA-159418		GCCA,_TCCA		GCCA,_TCCA	
+STARD5_binds_DCA,_LCA	R-HSA-159418		STARD5 // DCA // LCA	 // 28834 // 29744	STARD5:DCA,LCA	
+Cytosolic_cholate_and_chenodeoxycholate_are_conjugated_with_Coenzyme_A_(SLC27A5_BACS)	R-HSA-159418	Ec-6.2.1.3	CoA-SH // ATP // CCA,CDCA	57287 // 30616 // 	AMP // H2O // PPi // choloyl-CoA;_chenodeoxycholoyl-CoA	456215 // 15377 // 33019 // 
+Cytosolic_chenodeoxycholoyl-CoA_or_choloyl-CoA_are_conjugated_with_glycine_or_taurine	R-HSA-159418	Ec-2.3	Gly,_TAU // choloyl-CoA;_chenodeoxycholoyl-CoA	 // 	bile_salts // CoA-SH	 // 57287
+ABCB11_transports_bile_salts_from_cytosol_to_extracellular_region	R-HSA-159418		bile_salts // H2O // ATP	 // 15377 // 30616	ADP // bile_salts // Pi	456216 //  // 43474
+Digestion_of_cholesterol_esters_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8935690	Ec-3.1.1.13	H2O // CHEST	15377 // 17002	LCFAs // CHOL	15904 // 16113
+Digestion_of_monoacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8935690	Ec-3.1.1.23	H2O // MAG	15377 // 17408	glycerol // LCFAs	17754 // 15904
+Digestion_of_triacylglycerols_by_extracellular_CEL_(bile_salt-dependent_lipase)	R-HSA-8935690	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_triacylglycerols_by_extracellular_PTL:colipase	R-HSA-8935690	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+Digestion_of_diacylglycerols_by_extracellular_PTL:colipase	R-HSA-8935690	Ec-3.1.1.23	DAG // H2O	18035 // 15377	LCFAs // MAG	15904 // 17408
+Digestion_of_triacylglycerols_by_extracellular_pancreatic_lipase-related_protein_2	R-HSA-8935690	Ec-3.1.1.23	TAGs // H2O	17855 // 15377	DAG // LCFAs	18035 // 15904
+PNLIP:CLPS_hydrolyses_RPALM_to_atROL_and_PALM	R-HSA-8935690	Ec-3.1.1.21	H2O // RPALM	15377 // 17616	PALM // atROL	15756 // 17336
+LIPs_hydrolyze_TG_to_DAG_and_LCFA	R-HSA-8935690	Ec-3.1.1.34	H2O // TAGs	15377 // 17855	DAG // LCFAs	18035 // 15904
+Digestion_of_linear_starch_(amylose)_by_extracellular_amylase	R-HSA-8935690	Ec-3.2.1.1	H2O // starch_(amylose)	15377 // 	Mal // maltotriose	17306 // 27931
+Digestion_of_branched_starch_(amylopectin)_by_extracellular_amylase	R-HSA-8935690	Ec-3.2.1.1	H2O // starch_(amylopectin)	15377 // 	Mal // limit_dextrin // maltotriose	17306 // 28912 // 27931
+Digestion_of_1-6_linkages_of_limit_dextrins_to_yield_maltose,_maltotriose,_longer_maltosides,_and_glucose	R-HSA-8935690	Ec-3.2.1.20	limit_dextrin // H2O	28912 // 15377	Mal // Glc // maltotriose	17306 // 17925 // 27931
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(maltase-glucoamylase)	R-HSA-8935690	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(sucrase-isomaltase)	R-HSA-8935690	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltose_+_H2O_=>_2_D-glucose_(maltase-glucoamylase)	R-HSA-8935690	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+maltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-8935690	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+isomaltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-8935690	Ec-3.2.1.20	iMal // H2O	28189 // 15377	Glc	17925
+lactose_+_H2O_=>_D-glucose_+_D-galactose	R-HSA-8935690	Ec-3.2.1.108	H2O // Lac	15377 // 17716	Glc // Gal	17925 // 17118
+sucrose_+_H2O_=>_glucose_+_fructose	R-HSA-8935690	Ec-3.2.1.48	H2O // Suc	15377 // 17992	Glc // Fru	17925 // 15824
+trehalose_+_H2O_=>_2_D-glucose	R-HSA-8935690	Ec-3.2.1.28	H2O // alpha,alpha-trehalose	15377 // 16551	Glc	17925
+CHIA_hydrolyses_chitin	R-HSA-8935690	Ec-3.2.1.14	H2O // chitin	15377 // 	GlcNAc-beta1,4-GlcNAc-beta1,4-GlcNAc // GlcNAc-beta1,4-GlcNAc	86362 // 86361
+CHIT1_hydrolyses_CHIT_to_3xADGP	R-HSA-8935690	Ec-3.2.1	H2O // CHIT	15377 // 84373	ADGP	47977
+ALPI_dimer_hydrolyses_phosphate_monoesters	R-HSA-8935690	Ec-3.1.3.1	H2O // phosphate_monoester	15377 // 7794	Alcohol // Pi	30879 // 43474
+GUCY2C_trimer_binds_GUCA2A,B	R-HSA-8935690		GUCY2C_trimer // GUCA2A,B	 // 	GUCY2C_trimer:GUCA2A,B	
+PIR_oxygenates_quercetin	R-HSA-8935690	Ec-1.13.11.24	O2 // quercetin	15379 // 16243	CO // 2PCPGCA	17245 // 16068
+Digestion_of_linear_starch_(amylose)_by_extracellular_amylase	R-HSA-189085	Ec-3.2.1.1	H2O // starch_(amylose)	15377 // 	Mal // maltotriose	17306 // 27931
+Digestion_of_branched_starch_(amylopectin)_by_extracellular_amylase	R-HSA-189085	Ec-3.2.1.1	H2O // starch_(amylopectin)	15377 // 	Mal // limit_dextrin // maltotriose	17306 // 28912 // 27931
+Digestion_of_1-6_linkages_of_limit_dextrins_to_yield_maltose,_maltotriose,_longer_maltosides,_and_glucose	R-HSA-189085	Ec-3.2.1.20	limit_dextrin // H2O	28912 // 15377	Mal // Glc // maltotriose	17306 // 17925 // 27931
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(maltase-glucoamylase)	R-HSA-189085	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltotriose_+_H2O_=>_maltose_+_D-glucose_(sucrase-isomaltase)	R-HSA-189085	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931	Mal // Glc	17306 // 17925
+maltose_+_H2O_=>_2_D-glucose_(maltase-glucoamylase)	R-HSA-189085	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+maltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-189085	Ec-3.2.1.20	Mal // H2O	17306 // 15377	Glc	17925
+isomaltose_+_H2O_=>_2_D-glucose_(sucrase-isomaltase)	R-HSA-189085	Ec-3.2.1.20	iMal // H2O	28189 // 15377	Glc	17925
+lactose_+_H2O_=>_D-glucose_+_D-galactose	R-HSA-189085	Ec-3.2.1.108	H2O // Lac	15377 // 17716	Glc // Gal	17925 // 17118
+sucrose_+_H2O_=>_glucose_+_fructose	R-HSA-189085	Ec-3.2.1.48	H2O // Suc	15377 // 17992	Glc // Fru	17925 // 15824
+trehalose_+_H2O_=>_2_D-glucose	R-HSA-189085	Ec-3.2.1.28	H2O // alpha,alpha-trehalose	15377 // 16551	Glc	17925
+CHIA_hydrolyses_chitin	R-HSA-189085	Ec-3.2.1.14	H2O // chitin	15377 // 	GlcNAc-beta1,4-GlcNAc-beta1,4-GlcNAc // GlcNAc-beta1,4-GlcNAc	86362 // 86361
+CHIT1_hydrolyses_CHIT_to_3xADGP	R-HSA-189085	Ec-3.2.1	H2O // CHIT	15377 // 84373	ADGP	47977
+GLUT1_(SLC2A1)_tetramer_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+GLUT1_tetramer_binds_4xATP	R-HSA-189200		GLUT1_/_SLC2A1_tetramer // ATP	 // 30616	GLUT1:ATP_tetramer	
+GLUT1:ATP_tetramer_dissociates_to_GLUT1_tetramer_and_4xATP	R-HSA-189200		GLUT1:ATP_tetramer		GLUT1_/_SLC2A1_tetramer // ATP	 // 30616
+GLUT2_(SLC2A2)_tetramer_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+Glucose_is_secreted_across_the_plasma_membrane	R-HSA-189200		Glc	17925	Glc	17925
+GLUT3_(SLC2A3)_tetramer_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+GLUT4_(SLC2A4)_tetramer_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+SLC2A9_transports_Fru,_Glc,_urate	R-HSA-189200		Fru,Glc,urate		Fru,Glc,urate	
+Glucose_transport_by_class_III_GLUTs	R-HSA-189200		Glc	17925	Glc	17925
+GLUT7_and_GLUT11_transport_glucose_and_fructose	R-HSA-189200		hexoses_transported_by_GLUT7/11		hexoses_transported_by_GLUT7/11	
+GLUT14_(SLC2A14)_tetramer_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+SLC5A2_cotransports_Na+_and_glucose_from_extracellular_region_to_cytosol	R-HSA-189200		Na+ // Glc	29101 // 17925	Glc // Na+	17925 // 29101
+SLC5A2_binds_gliflozins	R-HSA-189200		gliflozins // SGLT2	 // 	SLC5A2:gliflozins	
+SLC5A10_cotransports_Na+_with_Man,_Fru_from_extracellular_region_to_cytosol	R-HSA-189200		Na+ // Fru,_Man	29101 // 	Fru,_Man // Na+	 // 29101
+SLC45A3_transports_Glc_from_extracellular_region_to_cytosol	R-HSA-189200		Glc	17925	Glc	17925
+SLC50A1_transports_Glc_from_cytosol_to_extracellular_region	R-HSA-189200		Glc	17925	Glc	17925
+Co-transport_(influx)_of_glucose_and_Na+_ions_by_SLC5As,_NAGLT1	R-HSA-189200		Na+ // Glc	29101 // 17925	Glc // Na+	17925 // 29101
+Co-transport_(influx)_of_glucose/mannose_and_Na+_ions_by_SGLT4	R-HSA-189200		Na+ // hexoses_transported_by_SGLT4	29101 // 	Na+ // hexoses_transported_by_SGLT4	29101 // 
+Defective_SI_does_not_hydrolyze_Mal	R-HSA-5659898	Ec-3.2.1.20	Mal // H2O	17306 // 15377		
+Defective_SI_does_not_hydrolyze_iMal	R-HSA-5659898	Ec-3.2.1.20	iMal // H2O	28189 // 15377		
+Defective_SI_does_not_hydrolyze_Suc	R-HSA-5659898	Ec-3.2.1.48	H2O // Suc	15377 // 17992		
+Defective_SI_does_not_hydrolyze_maltotriose	R-HSA-5659898	Ec-3.2.1.20	H2O // maltotriose	15377 // 27931		
+Defective_LCT_does_not_hydrolyze_Lac	R-HSA-5659898	Ec-3.2.1.108	H2O // Lac	15377 // 17716		
+UBIA1D_prenylates_menadione_to_form_MK4_(vitamin_K_hydroquinone)	R-HSA-6806664	Ec-2.5.1	menadione // GGPP	28869 // 57533	MK4 // PPi	78277 // 33019
+VKORC1_inhibitors_binds_VKORC1_dimer	R-HSA-6806664		VKORC1_dimer // VKORC1_inhibitors	 // 	VKORC1_inhibitors:VKORC1_dimer	
+MK4_epoxide_=>_MK4	R-HSA-6806664	Ec-1.17.4.4	H+ // MK4_epoxide	15378 // 90152	MK4	78277
+MK4_epoxide_=>_MK4	R-HSA-6806664	Ec-1.17.4.4	H+ // MK4_epoxide	15378 // 90152	MK4	78277
+TCN1_binds_RCbl	R-HSA-196741		TCN1 // dietary_protein:RCbl	 // 	protein // TCN1:RCbl	 // 
+Pancreatic_proteases_degrade_TCN1:RCbl	R-HSA-196741		TCN1:RCbl		RCbl	140785
+CBLIF_binds_RCbl	R-HSA-196741		RCbl // CBLIF	140785 // 	CBLIF:RCbl	
+CUBN:AMN_binds_CBLIF:RCbl	R-HSA-196741		CBLIF:RCbl // CUBN:AMN	 // 	CUBN:AMN:CBLIF:RCbl	
+CUBN:AMN-mediated_CBLIF:RCbl_uptake_and_delivery_to_lysosome	R-HSA-196741		CUBN:AMN:CBLIF:RCbl		CBLIF:RCbl // CUBN:AMN	 // 
+Unknown_lysosomal_protease_degrades_CBLIF:RCbl_to_release_Cbl	R-HSA-196741	Ec-3.4	CBLIF:RCbl		RCbl	140785
+ABCD4:LMBRD1_transports_RCbl_from_lysosomal_lumen_to_cytosol_(gut_mucosal_cells)	R-HSA-196741	Ec-7.6.2.8	H2O // RCbl // ATP	15377 // 140785 // 30616	ADP // RCbl // Pi	456216 // 140785 // 43474
+ABCC1_transports_cytosolic_RCbl_to_extracellular_region	R-HSA-196741	Ec-7.6.2.8	H2O // RCbl // ATP	15377 // 140785 // 30616	ADP // RCbl // Pi	456216 // 140785 // 43474
+TCN2_binds_RCbl_in_the_circulation	R-HSA-196741		RCbl // TCN2	140785 // 	TCN2:RCbl	
+TCN1_binds_correnoids_in_the_circulation	R-HSA-196741		TCN1 // correnoid	 // 33913	TCN1:correnoid	
+CD320_binds_extracellular_TCN2:RCbl	R-HSA-196741		TCN2:RCbl // CD320	 // 	TCN2:RCbl:CD320	
+CD320-mediated_TCN2:RCbl_uptake_and_delivery_to_lysosome	R-HSA-196741		TCN2:RCbl:CD320		TCN2:RCbl // CD320	 // 
+TCN2:RCbl_is_degraded_to_release_RCbl	R-HSA-196741	Ec-3.4	TCN2:RCbl		RCbl	140785
+ABCD4:LMBRD1_transports_RCbl_from_lysosomal_lumen_to_cytosol	R-HSA-196741	Ec-7.6.2.8	H2O // RCbl // ATP	15377 // 140785 // 30616	ADP // RCbl // Pi	456216 // 140785 // 43474
+LRP2_binds_extracellular_TCN2:RCbl	R-HSA-196741		TCN2:RCbl // LRP2:LDLRAP1	 // 	LRP2:LDLRAP1:TCN2:RCbl	
+LRP2-mediated_TCN2:RCbl_uptake_and_delivery_to_lysosome	R-HSA-196741		LRP2:LDLRAP1:TCN2:RCbl		TCN2:RCbl // LRP2:LDLRAP1	 // 
+MMACHC_dealkylates_RCbl	R-HSA-196741	Ec-1	RCbl // GSH // MMACHC	140785 // 57925 // 	R-GSH // MMACHC:cob(I)alamin // H+	90779 //  // 15378
+2_cob(I)alamin_+_H(+)_+_NAD(+)_=>_2_cob(II)alamin_+_NADH	R-HSA-196741		MMACHC:cob(I)alamin // NAD // H+	 // 57540 // 15378	MMACHC:cob(II)alamin // NADH	 // 57945
+MMACHC_decyanates_CNCbl	R-HSA-196741	Ec-1.16.1.6	CNCbl // TPNH // H+ // MMACHC	17439 // 57783 // 15378 // 	HCN // MMACHC:cob(II)alamin // TPN	18407 //  // 58349
+MMACHC:cob(II)alamin_binds_MMADHC	R-HSA-196741		MMACHC:cob(II)alamin // MMADHC	 // 	MMACHC:MMADHC:B12r	
+cob(II)alamin_is_transferred_from_MMACHC:MMADHC:cob(II)alamin_to_MTRR:MTR	R-HSA-196741		MMACHC:MMADHC:B12r // MTRR:MTR	 // 	MMADHC // MTRR:MTR:cob(II)alamin // MMACHC	 //  // 
+MTRR_reduces_cob(II)alamin_to_meCbl	R-HSA-196741	Ec-1.16.1.8	TPNH // SAM // MTRR:MTR:cob(II)alamin	57783 // 59789 // 	MTRR:MTR:MeCbl // SAH // TPN // H+	 // 57856 // 58349 // 15378
+Methionine_is_reformed	R-HSA-196741	Ec-2.1.1.13	MTRR:MTR:MeCbl // HCYS	 // 58065	MTRR:MTR:cob(I)alamin // L-Met	 // 57844
+MTR_transfers_CH3_group_from_5-methyl-THF_to_cob(I)alamin	R-HSA-196741	Ec-2.1.1.13	MTRR:MTR:cob(I)alamin // 5-methyl-THF	 // 18608	THF // MTRR:MTR:MeCbl	57453 // 
+MMADHC_targets_cytosolic_cob(II)alamin_for_entry_to_mitochondria	R-HSA-196741		MMACHC:MMADHC:B12r		MMADHC // B12r // MMACHC	 // 16304 // 
+MMAB_adenosylates_cob(I)alamin	R-HSA-196741	Ec-2.5	ATP // B12r // FADH2	30616 // 16304 // 58307	H+ // FAD // AdoCbl // PPP	15378 // 57692 // 18408 // 15266
+MMAA:MUT_binds_AdoCbl	R-HSA-196741		2xMMAA:2xMUT // AdoCbl	 // 18408	2xMMAA:2xMUT:AdoCbl	
