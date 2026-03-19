@@ -5,27 +5,25 @@
 - [Neo4j Desktop](https://neo4j.com/download/) installé
 - Python 3 installé
 
-pip3 install -r requirements.txt 
-
 ---
 
 ## Installation
 
 ### 1. Configurer Neo4j
-
+ 
 1. Installer [Neo4j Desktop](https://neo4j.com/download/)
 2. Créer une nouvelle instance de base de données
 3. Définir un mot de passe — **il doit correspondre aux identifiants utilisés dans les fichiers du projet** (actuellement `12345678`)
 4. Démarrer l'instance
-
+ 
 ### 2. Installer les dépendances Python
-
+ 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
-
+ 
 ### 3. Charger la base de données
-
+ 
 Ouvrir `database_load/load_neo4j.py` et vérifier que le mot de passe Neo4j correspond bien à celui que vous venez de créer.
 
 Ensuite, lancer le script de chargement :
