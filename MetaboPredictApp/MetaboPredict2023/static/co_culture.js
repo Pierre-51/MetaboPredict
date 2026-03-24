@@ -42,9 +42,9 @@ function CocultureInit(bact) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
-                serverUser: "352d3bfc",
-                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                serverUrl: NEO4J_CONFIG.serverUrl,
+                serverUser: NEO4J_CONFIG.serverUser,
+                serverPassword: NEO4J_CONFIG.serverPassword,
                 driverConfig: {
                     encrypted: "ENCRYPTION_ON",
                     trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
@@ -198,9 +198,9 @@ function CocultureInit(bact) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
-                serverUser: "352d3bfc",
-                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                serverUrl: NEO4J_CONFIG.serverUrl,
+                serverUser: NEO4J_CONFIG.serverUser,
+                serverPassword: NEO4J_CONFIG.serverPassword,
                 driverConfig: {
                     encrypted: "ENCRYPTION_ON",
                     trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
@@ -329,9 +329,9 @@ function ReactZoom(react){
     var config = {
         containerId: "viz2",
         neo4j: {
-            serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
-            serverUser: "352d3bfc",
-            serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+            serverUrl: NEO4J_CONFIG.serverUrl,
+            serverUser: NEO4J_CONFIG.serverUser,
+            serverPassword: NEO4J_CONFIG.serverPassword,
             driverConfig: {
                 encrypted: "ENCRYPTION_ON",
                 trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
@@ -467,9 +467,9 @@ function Exchanges(bact) {
     var config = {
         containerId: "viz",
     neo4j: {
-        serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
-        serverUser: "352d3bfc",
-        serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+        serverUrl: NEO4J_CONFIG.serverUrl,
+        serverUser: NEO4J_CONFIG.serverUser,
+        serverPassword: NEO4J_CONFIG.serverPassword,
         driverConfig: {
             encrypted: "ENCRYPTION_ON",
             trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
