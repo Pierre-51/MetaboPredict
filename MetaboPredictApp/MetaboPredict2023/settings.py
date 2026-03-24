@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-config.DATABASE_URL = 'bolt://neo4j:12345678@localhost:7687'  # default
+config.DATABASE_URL = 'neo4j+s://neo4j:YOUR_AURA_PASSWORD@352d3bfc.databases.neo4j.io'  # default
 
 # NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:foobarbaz@localhost:7687')
 
