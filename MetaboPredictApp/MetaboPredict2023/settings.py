@@ -15,8 +15,8 @@ from pathlib import Path
 
 from neomodel import config
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 print(">>> NEO4J URL BEING USED:", os.environ.get('NEO4J_BOLT_URL', 'NOT SET'))
 
