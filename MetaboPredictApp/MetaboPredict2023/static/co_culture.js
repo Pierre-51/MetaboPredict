@@ -38,17 +38,17 @@ function CocultureInit(bact) {
           RETURN *
         `;
         console.log(query)
+        console.log(NEO4J_CONFIG)
         var config = {
             containerId: "viz",
-            // neo4j: {
-            //     serverUrl: "bolt://localhost:7687",
-            //     serverUser: "neo4j",
-            //     serverPassword: "12345678",
-            // },
             neo4j: {
-                serverUrl: NEO4J_CONFIG.serverUrl,
-                serverUser: NEO4J_CONFIG.serverUser,
-                serverPassword: NEO4J_CONFIG.serverPassword,
+                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+                serverUser: "352d3bfc",
+                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                driverConfig: {
+                    encrypted: "ENCRYPTION_ON",
+                    trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+                }
             },
 
             visConfig: {
@@ -198,9 +198,13 @@ function CocultureInit(bact) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: NEO4J_CONFIG.serverUrl,
-                serverUser: NEO4J_CONFIG.serverUser,
-                serverPassword: NEO4J_CONFIG.serverPassword,
+                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+                serverUser: "352d3bfc",
+                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                driverConfig: {
+                    encrypted: "ENCRYPTION_ON",
+                    trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+                }
             },
 
             visConfig: {
@@ -325,9 +329,13 @@ function ReactZoom(react){
     var config = {
         containerId: "viz2",
         neo4j: {
-            serverUrl: NEO4J_CONFIG.serverUrl,
-            serverUser: NEO4J_CONFIG.serverUser,
-            serverPassword: NEO4J_CONFIG.serverPassword,
+            serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+            serverUser: "352d3bfc",
+            serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+            driverConfig: {
+                encrypted: "ENCRYPTION_ON",
+                trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+            }
         },
 
         visConfig: {
@@ -458,11 +466,15 @@ function Exchanges(bact) {
     console.log(query)
     var config = {
         containerId: "viz",
-        neo4j: {
-            serverUrl: NEO4J_CONFIG.serverUrl,
-            serverUser: NEO4J_CONFIG.serverUser,
-            serverPassword: NEO4J_CONFIG.serverPassword,
-        },
+    neo4j: {
+        serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+        serverUser: "352d3bfc",
+        serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+        driverConfig: {
+            encrypted: "ENCRYPTION_ON",
+            trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+        }
+    },
 
         visConfig: {
             interaction: {

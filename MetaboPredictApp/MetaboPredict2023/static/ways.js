@@ -36,9 +36,13 @@ function voiemetabo(mol1,mol2,mol3) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: NEO4J_CONFIG.serverUrl,
-                serverUser: NEO4J_CONFIG.serverUser,
-                serverPassword: NEO4J_CONFIG.serverPassword,
+                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+                serverUser: "352d3bfc",
+                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                driverConfig: {
+                    encrypted: "ENCRYPTION_ON",
+                    trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+                }
             },
 
             visConfig: {
@@ -152,9 +156,13 @@ function voiemetabo(mol1,mol2,mol3) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: NEO4J_CONFIG.serverUrl,
-                serverUser: NEO4J_CONFIG.serverUser,
-                serverPassword: NEO4J_CONFIG.serverPassword,
+                serverUrl: "neo4j://352d3bfc.databases.neo4j.io",  // ← no +s
+                serverUser: "352d3bfc",
+                serverPassword: "r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI",
+                driverConfig: {
+                    encrypted: "ENCRYPTION_ON",
+                    trust: "TRUST_SYSTEM_CA_SIGNED_CERTIFICATES",
+                }
             },
 
             visConfig: {

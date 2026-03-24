@@ -15,7 +15,10 @@ from pathlib import Path
 
 from neomodel import config
 
+from dotenv import load_dotenv
+load_dotenv()
 
+print(">>> NEO4J URL BEING USED:", os.environ.get('NEO4J_BOLT_URL', 'NOT SET'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,18 +31,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-n+gz0f!-r!vsnc!cgtp7)pc%#y-vnx2(k3hknomqbr)zm1!l0w'
 # # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'local-dev-only-key')
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
+# DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = True
+# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
+
+# config.DATABASE_URL = os.environ.get(
+#     'NEO4J_BOLT_URL',
+#     'bolt://neo4j:12345678@localhost:7687'  # fallback for local dev
+# )
 
 config.DATABASE_URL = os.environ.get(
     'NEO4J_BOLT_URL',
-    # 'bolt://neo4j:12345678@localhost:7687'  # fallback for local dev
+    'neo4j+s://352d3bfc:r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI@352d3bfc.databases.neo4j.io'
 )
 
 # NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:foobarbaz@localhost:7687')
+# config.DATABASE_URL = 'bolt://neo4j:12345678@localhost:7687'
 
 # Application definition
 INSTALLED_APPS = [

@@ -1,5 +1,6 @@
 import os
 from django.shortcuts import render
+from dotenv import load_dotenv
 from .utils import (
     fetch_molecule,
     fetch_label,
@@ -10,6 +11,7 @@ from .utils import (
     fetch_PnotR,
     fetch_path)
 
+load_dotenv()
 
 def get_neo4j_config():
     return {
