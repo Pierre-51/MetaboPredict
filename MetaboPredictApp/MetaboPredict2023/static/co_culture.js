@@ -40,10 +40,15 @@ function CocultureInit(bact) {
         console.log(query)
         var config = {
             containerId: "viz",
+            // neo4j: {
+            //     serverUrl: "bolt://localhost:7687",
+            //     serverUser: "neo4j",
+            //     serverPassword: "12345678",
+            // },
             neo4j: {
-                serverUrl: "bolt://localhost:7687",
-                serverUser: "neo4j",
-                serverPassword: "12345678",
+                serverUrl: NEO4J_CONFIG.serverUrl,
+                serverUser: NEO4J_CONFIG.serverUser,
+                serverPassword: NEO4J_CONFIG.serverPassword,
             },
 
             visConfig: {
@@ -193,9 +198,9 @@ function CocultureInit(bact) {
         var config = {
             containerId: "viz",
             neo4j: {
-                serverUrl: "bolt://localhost:7687",
-                serverUser: "neo4j",
-                serverPassword: "12345678",
+                serverUrl: NEO4J_CONFIG.serverUrl,
+                serverUser: NEO4J_CONFIG.serverUser,
+                serverPassword: NEO4J_CONFIG.serverPassword,
             },
 
             visConfig: {
@@ -320,9 +325,9 @@ function ReactZoom(react){
     var config = {
         containerId: "viz2",
         neo4j: {
-            serverUrl: "bolt://localhost:7687",
-            serverUser: "neo4j",
-            serverPassword: "12345678",
+            serverUrl: NEO4J_CONFIG.serverUrl,
+            serverUser: NEO4J_CONFIG.serverUser,
+            serverPassword: NEO4J_CONFIG.serverPassword,
         },
 
         visConfig: {
@@ -454,9 +459,9 @@ function Exchanges(bact) {
     var config = {
         containerId: "viz",
         neo4j: {
-            serverUrl: "bolt://localhost:7687",
-            serverUser: "neo4j",
-            serverPassword: "12345678",
+            serverUrl: NEO4J_CONFIG.serverUrl,
+            serverUser: NEO4J_CONFIG.serverUser,
+            serverPassword: NEO4J_CONFIG.serverPassword,
         },
 
         visConfig: {
