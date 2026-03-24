@@ -13,9 +13,9 @@ from .utils import (
 
 def get_neo4j_config():
     return {
-        'url': os.environ.get('NEO4J_URL', 'bolt://localhost:7687'),
-        'user': os.environ.get('NEO4J_USER', 'neo4j'),
-        'password': os.environ.get('NEO4J_PASSWORD', '12345678'),
+        'url': os.environ.get('NEO4J_URL', 'neo4j+s://352d3bfc.databases.neo4j.io'),
+        'user': os.environ.get('NEO4J_USER', '352d3bfc'),
+        'password': os.environ.get('NEO4J_PASSWORD', 'r9VUcKIPcgC5NxzQ2FnEOn0HoOvDZSekkrj9Eb0AryI'),
     }
 
 
