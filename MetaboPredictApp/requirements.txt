@@ -2,3 +2,4 @@ neo4j
 django>=4.2
 django-neomodel
 gunicorn
+whitenoise
