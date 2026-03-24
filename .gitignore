@@ -1,2 +1,2 @@
-.venv
-./MetaboPredict/MetaboPredictApp/.env
+.venv/
+MetaboPredictApp/.env
