@@ -1,0 +1,1 @@
+web: gunicorn MetaboPredict2023.wsgi:application

@@ -220,7 +220,7 @@
             function checkCheckbox(checkboxId) {
               var filtre = document.getElementById('filtre1');
               const checkboxes = filtre.querySelectorAll('input[type="checkbox"]');
-              {#var checkboxes = document.querySelectorAll('input[type="checkbox"]');#}
+            //   {#var checkboxes = document.querySelectorAll('input[type="checkbox"]');#}
               if (checkboxId === 'All') {
                 // Uncheck the other checkboxes
                 checkboxes.forEach(function(checkbox) {
@@ -253,7 +253,14 @@
                 });
             } );
         </script>
-            <script src="{% static 'action.js' %}"></script>
+        <script>
+            const NEO4J_CONFIG = {
+                serverUrl: "{{ neo4j_config.url }}",
+                serverUser: "{{ neo4j_config.user }}",
+                serverPassword: "{{ neo4j_config.password }}"
+            };
+        </script>
+        <script src="{% static 'action.js' %}"></script>
         {% endblock %}
     </body>
 </html>

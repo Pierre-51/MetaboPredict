@@ -164,6 +164,13 @@
             </div>
         </div>
         {% block js_block %}
+            <script>
+                const NEO4J_CONFIG = {
+                    serverUrl: "{{ neo4j_config.url }}",
+                    serverUser: "{{ neo4j_config.user }}",
+                    serverPassword: "{{ neo4j_config.password }}"
+                };
+            </script>
             <script src="{% static 'action.js' %}"></script>
             <script src="{% static 'ways.js' %}"></script>
             <script>
