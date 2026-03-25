@@ -3,25 +3,22 @@ $('#stabilize').click(function () {
     viz.style.display = "none";
 });
 
-function voiemetabo(mol1,mol2,mol3) {
-    // Construction de la requête Cypher
-    // mol1 = document.getElementById('NC1')
-    // mol2 = document.getElementById('NC2')
-
-
-    if(mol1 == "" || mol2 == "") {
+function voiemetabo(mol1, mol2, mol3) {
+    if (mol1 == "" || mol2 == "") {
         $('#errorMessage1').show();
         $('#errorMessage').hide();
         $('#table2').hide();
         $('#viz').hide();
+        return; // ← ADD THIS
     }
-    else if(mol1 == mol2 ) {
+    else if (mol1 == mol2) {
         $('#errorMessage').show();
         $('#errorMessage1').hide();
         $('#table2').hide();
         $('#viz').hide();
+        return; // ← ADD THIS
     }
-    else if(mol3 == ""){
+    else if (mol3 == "") {
         $('#errorMessage').hide();
         $('#errorMessage1').hide();
         $('#table2').show();
@@ -246,11 +243,8 @@ function voiemetabo(mol1,mol2,mol3) {
         };
     }
     viz = new NeoVis.default(config);
-
-    viz.render()
-
+    viz.render();
     $('#viz').show();
-
     console.log(viz);
 }
 
